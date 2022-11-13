@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: dodgerblue;
+    background-image: url("https://parade.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cq_auto:good%2Cw_1200/MTkwNTc4NzcxNjIxOTE0NDky/soul.png");
+    animation-name: movement;
+    animation-duration: 7s;
+}
+
+@keyframes movement{
+    0%{
+        transform: translate(0);
+    }
+    10%{
+        transform: translateX(400px);
+    }
+    20%{
+        transform: translate(400px,300px);
+    }
+    30%{
+        transform: translate(900px,300px);
+    }
+    40%{
+        transform: translate(900px,500px);
+    }
+    50%{
+        transform: translate(700px,500px);
+    }
+    60%{
+        transform: translate(700px,400px);
+    }
+    70%{
+        transform: translate(500px,400px);
+    }
+    80%{
+        transform: translate(400px,300px);
+    }
+    90%{
+        transform: translate(0px,400px);
+    }
+     100%{
+        transform: translate(0px,0px);
+     }   
+}
